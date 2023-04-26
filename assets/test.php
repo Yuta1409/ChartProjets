@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 ?>
 
 <!doctype html>
@@ -16,23 +18,27 @@ session_start();
 </head>
 <body>
 
-<a href="../assets/test.php">test</a>
-<br>
-<br>
-<br>
-
 <?php
 
-include_once '../assets/include/connexion.php';
-
+$conn = connexionDB();
+$sql = "SELECT * FROM client";
+$result = $conn->query($sql);
+$result->execute();
 
 ?>
 
-
-
-
-
-<div id='chartCA' style="margin-left: 80px"></div>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Avec Renouvellement</th>
+        <th>Sans Renouvellement</th>
+    </tr>
+    <tr>
+        <td><?php echo $date; ?></td>
+        <td><?php echo $avecRenouvellement; ?></td>
+        <td><?php echo $sansRenouvellement; ?></td>
+    </tr>
+</table>
 
 <script type="text/javascript">
     var myConfig = {

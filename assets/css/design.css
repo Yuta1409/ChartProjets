@@ -1,0 +1,29 @@
+:root {
+    --purple: #4C3686;
+    --pink: #E759BE;
+    --fontColor: #A7ACB5;
+    --gray: #F5F6FA;
+    --white: #FFFFFF;
+    --boxShadow: #D9D9D9;
+    --lightBlue: #00C9F3;
+    --red: #FF4D4F;
+    --green: #00BFA5;
+    --yellow: #FFB800;
+    --orange: #FF7A45;
+    --blue: #1890FF;
+    --black: #000000;
+    --darkGray: #333333;
+    --lightGray: #F5F6FA;
+}
+
+.chart1 {
+    height: 500px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.chart2 {
+    height: 200px;
+    width: 100%;
+    border-radius: 4px;
+}
