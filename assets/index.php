@@ -25,11 +25,12 @@ session_start();
 
 include_once '../assets/include/connexion.php';
 
+$conn = connexionDB();
 
 ?>
 
 
-
+inc
 
 
 <div id='chartCA' style="margin-left: 80px"></div>
